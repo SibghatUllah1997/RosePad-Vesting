@@ -1,0 +1,305 @@
+body {
+  font-family: "Segoe UI" !important;
+  background-image: url(../src/assets/images/banner-img.svg)!important;
+  background-repeat: no-repeat!important;
+  background-color: #003267!important;
+  @media screen and  (min-width:992px) {
+  background-size: contain!important;
+  }
+}
+
+.goldefyHeader {
+  min-height: 104px;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  background-image: url(../src/assets/images/topnavbg.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+      background: none;
+      flex-wrap: wrap;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+  .logo {
+    position: relative;
+    top: -10px;
+    width: 12%;
+    img {
+      width: 100%;
+    }
+    @media screen and (max-width: 767px) {
+     order: 1;
+     top:0;
+     width: 100%;
+     text-align: center;
+     img {
+       width: 20%;
+       margin: 0 auto;
+     }
+  }
+  }
+  .headerBtn {
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    background-position: center;
+    width: 320px;
+    color: #fff;
+    height: 65px;
+      background-image: url(../src/assets/images/button-bg.png);
+      @media screen and (max-width: 767px) {
+        order: 3;
+        width: 145px;
+        height: 30px;
+        font-size: 8px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+  }
+}
+
+.bannerImage {
+  text-align: center;
+  margin-top: 122px;
+  margin-bottom: 74px;
+  color: #fff;
+  font-size: 36px;
+  h1 {
+    font-weight:700;
+    font-size:96px;
+  }
+
+  @media screen and (max-width:767px) {
+    font-size: 20px;
+  }
+}
+
+.bannerWrap {
+    max-width: 1480px;
+    width: 100%;
+    padding : 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 50px;
+    box-sizing: border-box;
+    .inrBox {
+      display: flex;
+      align-items: center;
+      width: 23.5%;
+      border-radius: 10px;
+      background-color: #003268;
+      margin: 0 0.75%;
+      padding: 0 20px;
+      box-sizing: border-box;
+      min-height: 112px;
+      @media screen and (max-width:992px) {
+          width: 48.5%;
+          margin: 0 0.75% 10px;
+      }
+      @media screen and (max-width:767px) {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+      h5 {
+        color: #23CAFF;
+        margin-left: 5px;
+        font-size: 15px;
+        font-weight: 700;
+        small {
+          display: block;
+          color: #fff;
+          margin-top: 8px;
+         font-family: 'Segoe UI';
+         font-weight: 400;
+        }
+      }
+    }
+}
+
+.roudDetail {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  background: linear-gradient(180deg, rgba(0, 50, 104, 0.81) 0%, rgba(0, 50, 104, 0.9) 100%);
+  @media screen and (max-width:767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 64px;
+    margin: 0;
+    margin-bottom: 60px;
+    font-weight: 700;
+    @media screen and (max-width:767px) {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+  }
+  .wrap {
+    max-width: 1400px!important;
+    width: 100%!important;
+    padding : 0 15px!important;
+    margin: 0 auto!important;
+    box-sizing: border-box!important;
+  }
+}
+
+
+.claimBoxWrap {
+  display: flex;
+  @media screen and (max-width:767px) {
+    flex-wrap: wrap;
+  }
+  .claimBoxInr {
+    width: 46%;
+    padding: 40px 25px 10px;
+    margin: 0 2% 70px;
+    background-color: #003268;
+    border: solid 3px #5FA1F3;
+    position: relative;
+    @media screen and (max-width:767px) {
+      width: 100%;
+      padding: 30px 15px 10px;
+      margin: 0 2% 40px;
+    }
+     &::before {
+       content: "";
+       position: absolute;
+       left: -4px;
+       top: -4px;
+       width: 23px;
+       height: 25px;
+       background-image: url(./assets/images/bxshap1.png);
+     }
+     &::after {
+      content: "";
+      position: absolute;
+      right: -3px;
+      top: -3px;
+      width: 23px;
+      height: 25px;
+      background-image: url(./assets/images/bxshap2.png);
+    }
+    .bannerWrap {
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-bottom: 0;
+      @media screen and (max-width:992px) {
+        padding: 0;
+      }
+      .inrBox {
+        width: 50%;
+        margin: 0 0 30px;
+        min-height: auto;
+        padding: 0;
+        @media screen and (max-width:992px) {
+            width: 100%;
+            margin: 0 0 10px;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: -3px;
+        bottom: -3px;
+        width: 23px;
+        height: 25px;
+        background-image: url(./assets/images/bxshap4.png);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: -3px;
+        bottom: -3px;
+        width: 23px;
+        height: 25px;
+        background-image: url(./assets/images/bxshap3.png);
+      }
+    }
+    .claimHead {
+      width: 100%;
+      position: relative;
+      display: flex;
+      color: #fff;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (max-width:767px) {
+        font-size: 14px;
+      }
+      &::before, &::after 
+      {
+        content: "";
+        position: absolute;
+        top:0;  
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #5fa1f3; /* Old browsers */
+        box-shadow: 0px 7px 30px 0px rgba(95, 161, 243, 0.7);
+        background: -moz-linear-gradient(left,  rgba(95, 161, 243, 0.03) 0%, #5fa1f3 51%, #003268 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(95, 161, 243, 0.03) 0%,#5fa1f3 51%,#003268 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(95, 161, 243, 0.03) 0%,#5fa1f3 51%,#003268 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fa1f3', endColorstr='#003268',GradientType=1 ); /* IE6-9 */
+      }
+      &::after {
+        top: auto;
+        bottom: 0!important;
+        left: 0!important;
+      }
+      .claimBtn {
+        width: 140px;
+        height: 70px;
+        cursor: pointer;
+        background-image: url(./assets/images/claimbtn.png);
+        background-color: transparent;
+        border: navajowhite;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        font-family: 'Segoe UI';
+        text-transform: uppercase;
+        font-weight: 400;
+          @media screen and (max-width:767px) {
+            width: 100px;
+            height: 50px;
+          }
+      }
+    }
+  }
+  
+}
+
+.socialIcon {
+  width: 60px!important;
+  height: 625px!important;
+  position: fixed!important;
+  right: 0!important;
+  top:17%!important;
+  background-image: url(./assets/images/socialBg.png)!important;
+  ul {
+    padding-left: 0!important;
+    list-style: none!important;
+    position: relative!important;
+    left: -26px!important;
+    top: 100px!important;
+    li {
+      margin-bottom: 25px!important;
+    }
+  }
+  @media screen and (max-width:767px) {
+      display: none;
+  }
+}
